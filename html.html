@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire - Qualité des Soins en Chirurgie</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; padding: 0; background-color: #f4f4f4; }
+        form { background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        .section { margin-bottom: 20px; }
+        label { display: block; margin: 10px 0 5px; }
+        input, select, textarea { width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px; }
+        button { background-color: #4CAF50; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer; }
+        button:hover { background-color: #45a049; }
+    </style>
+</head>
+<body>
+
+<h2>Formulaire - Rôle Infirmier dans la Gestion de la Qualité des Soins</h2>
+<form>
+
+    <!-- Informations Générales -->
+    <div class="section">
+        <h3>Informations Générales</h3>
+        <label>Sexe :</label>
+        <input type="radio" name="sexe" value="Homme"> Homme
+        <input type="radio" name="sexe" value="Femme"> Femme
+
+        <label>Âge :</label>
+        <input type="number" name="age" min="18" required>
+
+        <label>Années d'expérience en soins infirmiers :</label>
+        <select name="experience">
+            <option>< 1 an</option>
+            <option>1-5 ans</option>
+            <option>6-10 ans</option>
+            <option>> 10 ans</option>
+        </select>
+
+        <label>Type d'unité chirurgicale :</label>
+        <select name="unite">
+            <option>Chirurgie générale</option>
+            <option>Chirurgie orthopédique</option>
+            <option>Chirurgie cardiaque</option>
+            <option>Autre</option>
+        </select>
+
+        <label>Niveau de formation :</label>
+        <select name="formation">
+            <option>Diplôme d'État</option>
+            <option>Licence</option>
+            <option>Master</option>
+            <option>Autre</option>
+        </select>
+    </div>
+
+    <!-- Connaissance des Protocoles -->
+    <div class="section">
+        <h3>Connaissance et Application des Protocoles</h3>
+        <label>Êtes-vous informé(e) des protocoles en matière de qualité des soins en chirurgie ?</label>
+        <input type="radio" name="protocoles" value="Oui, parfaitement"> Oui, parfaitement
+        <input type="radio" name="protocoles" value="Oui, mais partiellement"> Oui, mais partiellement
+        <input type="radio" name="protocoles" value="Non"> Non
+
+        <label>À quelle fréquence appliquez-vous ces protocoles ?</label>
+        <select name="frequence">
+            <option>Toujours</option>
+            <option>Souvent</option>
+            <option>Parfois</option>
+            <option>Rarement</option>
+        </select>
+
+        <label>Quels sont les protocoles les plus utilisés ?</label>
+        <input type="checkbox" name="protocoles_utilises" value="Prévention des infections nosocomiales"> Prévention des infections nosocomiales
+        <input type="checkbox" name="protocoles_utilises" value="Gestion de la douleur post-opératoire"> Gestion de la douleur post-opératoire
+        <input type="checkbox" name="protocoles_utilises" value="Sécurisation de l'administration des médicaments"> Sécurisation de l'administration des médicaments
+        <input type="checkbox" name="protocoles_utilises" value="Prévention des escarres et thromboses"> Prévention des escarres et thromboses
+        <input type="text" placeholder="Autre (préciser)">
+    </div>
+
+    <!-- Suggestions et Améliorations -->
+    <div class="section">
+        <h3>Suggestions et Améliorations</h3>
+        <label>Quelles actions pourraient être mises en place pour améliorer la gestion de la qualité des soins ?</label>
+        <textarea rows="4"></textarea>
+
+        <label>Commentaires ou suggestions supplémentaires :</label>
+        <textarea rows="4"></textarea>
+    </div>
+
+    <button type="submit">Envoyer</button>
+</form>
+
+</body>
+</html>
